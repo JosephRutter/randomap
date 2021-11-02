@@ -11,6 +11,7 @@ public class Main {
         System.out.println("S = shop");
         System.out.println("M = mountain");
         System.out.println("# = grass");
+        System.out.println();
 
         map[2][2] = 1;
 
@@ -27,22 +28,21 @@ public class Main {
         }
         for (int j = 0; j < map.length; j++) {
             for (int k = 0; k < map[j].length; k++) {
-                if ((int)map[j][k] == 1) {
+                if (map[j][k] == 1) {
                     System.out.print("H ");
-                } else if ((int) map[j][k] == 2) {
+                } else if (map[j][k] == 2) {
                     System.out.print("C ");
-                } else if ((int)map[j][k] == 3) {
+                } else if (map[j][k] == 3) {
                     System.out.print("+ ");
-                } else if ((int)map[j][k] == 4) {
+                } else if (map[j][k] == 4) {
                     System.out.print("S ");
-                } else if((int)map[j][k] == 5){
+                } else if (map[j][k] == 5) {
                     System.out.print("M ");
-                }
-                else {
+                } else {
                     System.out.print("# ");
                 }
             }
-            System.out.println("");
+            System.out.println();
 
         }
     }
